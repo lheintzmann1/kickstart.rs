@@ -11,11 +11,11 @@
 
 ## Features
 
-- 🚀 **Fast**: Built with Rust for maximum performance
-- 🛡️ **Safe**: Memory safety guaranteed by Rust's type system
-- 🔧 **Configurable**: Highly customizable via configuration files
-- 📦 **Lightweight**: Minimal dependencies and small binary size
-- 🌐 **Cross-platform**: Works on Linux, macOS, and Windows
+- **Feature1**: Description of feature 1
+- **Feature2**: Description of feature 2
+- **Feature3**: Description of feature 3
+- **Feature4**: Description of feature 4
+- **Feature5**: Description of feature 5
 
 ## Installation
 
