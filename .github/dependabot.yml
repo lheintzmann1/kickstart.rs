@@ -1,0 +1,33 @@
+version: 2
+updates:
+  - package-ecosystem: "cargo"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    open-pull-requests-limit: 10
+    reviewers:
+      - "{{GITHUB_USERNAME}}"  # Replace with your GitHub username
+    assignees:
+      - "{{GITHUB_USERNAME}}"  # Replace with your GitHub username
+    commit-message:
+      prefix: "chore"
+      include: "scope"
+    labels:
+      - "dependencies"
+      - "rust"
+
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    open-pull-requests-limit: 5
+    reviewers:
+      - "{{GITHUB_USERNAME}}"  # Replace with your GitHub username
+    assignees:
+      - "{{GITHUB_USERNAME}}"  # Replace with your GitHub username
+    commit-message:
+      prefix: "chore"
+      include: "scope"
+    labels:
+      - "dependencies"
+      - "github-actions"

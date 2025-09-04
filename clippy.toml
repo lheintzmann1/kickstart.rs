@@ -1,0 +1,39 @@
+# Clippy configuration
+# See https://doc.rust-lang.org/clippy/configuration.html for all options
+
+# Cognitive complexity threshold
+cognitive-complexity-threshold = 30
+
+# Cyclomatic complexity threshold  
+cyclomatic-complexity-threshold = 7
+
+# Maximum number of single char bindings a scope may have
+single-char-binding-names-threshold = 4
+
+# Maximum number of lines a function or method can have
+too-many-lines-threshold = 100
+
+# Maximum number of arguments a function can have
+too-many-arguments-threshold = 7
+
+# Maximum number of bounds a generic type can have
+type-complexity-threshold = 250
+
+# Minimum rust version supported
+msrv = "1.70.0"
+
+# Maximum size of types in bytes
+trivial-copy-size-limit = 16
+
+# Maximum size for arrays on the stack
+array-size-threshold = 512000
+
+# Maximum number of expressions in an enum variant to suggest using a Box
+enum-variant-size-threshold = 200
+
+# Lint level adjustments can be done in Cargo.toml:
+# [lints.clippy]
+# all = "warn"
+# pedantic = "warn"
+# cargo = "warn"
+# nursery = "warn"

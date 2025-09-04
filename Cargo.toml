@@ -1,0 +1,58 @@
+[package]
+name = "{{PROJECT_NAME}}"
+version = "0.1.0"
+edition = "2021"
+authors = ["{{AUTHOR_NAME}} <{{AUTHOR_EMAIL}}>"]
+license = "MIT OR Apache-2.0"
+description = "{{PROJECT_DESCRIPTION}}"
+readme = "README.md"
+homepage = "https://github.com/{{GITHUB_USERNAME}}/{{PROJECT_NAME}}"
+repository = "https://github.com/{{GITHUB_USERNAME}}/{{PROJECT_NAME}}"
+keywords = ["{{KEYWORD1}}", "{{KEYWORD2}}", "{{KEYWORD3}}"]
+categories = ["{{CATEGORY1}}", "{{CATEGORY2}}"]
+rust-version = "1.70.0"  # MSRV
+
+[[bin]]
+name = "{{PROJECT_NAME}}"
+path = "src/main.rs"
+
+[dependencies]
+# Common dependencies - uncomment as needed
+# anyhow = "1.0"           # Error handling
+# clap = { version = "4.0", features = ["derive"] }  # CLI parsing
+# serde = { version = "1.0", features = ["derive"] }  # Serialization
+# serde_json = "1.0"       # JSON support
+# tokio = { version = "1.0", features = ["full"] }    # Async runtime
+# tracing = "0.1"          # Structured logging
+# tracing-subscriber = "0.3"  # Log formatting
+# uuid = { version = "1.0", features = ["v4"] }       # UUID generation
+# chrono = { version = "0.4", features = ["serde"] }  # Date/time handling
+# reqwest = { version = "0.11", features = ["json"] } # HTTP client
+
+[dev-dependencies]
+# Testing and development dependencies
+# tokio-test = "0.4"       # Async testing utilities
+# proptest = "1.0"         # Property-based testing
+# criterion = "0.5"        # Benchmarking
+# tempfile = "3.0"         # Temporary files for testing
+
+[profile.release]
+# Optimize for size and performance
+opt-level = 3
+lto = true
+codegen-units = 1
+panic = "abort"
+strip = true
+
+[profile.dev]
+# Fast compilation for development
+opt-level = 0
+debug = true
+overflow-checks = true
+
+# Optional: Add workspace configuration if this will be a workspace
+# [workspace]
+# members = [
+#     "crates/*",
+# ]
+# resolver = "2"

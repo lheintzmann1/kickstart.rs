@@ -1,0 +1,86 @@
+# Rust and Cargo
+/target/
+Cargo.lock
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Logs
+*.log
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Coverage directory used by tools like istanbul
+coverage/
+*.lcov
+
+# Output of 'npm pack'
+*.tgz
+
+# Dependency directories
+node_modules/
+
+# Optional npm cache directory
+.npm
+
+# Optional REPL history
+.node_repl_history
+
+# Output of webpack
+dist/
+
+# Temporary folders
+tmp/
+temp/
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Editor backup files
+*~
+*.tmp
+*.bak
+
+# Nix
+result
+result-*
+
+# direnv
+.envrc
+.direnv/
+
+# Just
+.just/
+
+# Test artifacts
+*.profraw
+*.profdata
+
+# Documentation build artifacts
+book/
+
+# Benchmarking results
+target/criterion/
+
+# Flamegraph output
+flamegraph.svg
+perf.data*
