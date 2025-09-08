@@ -86,7 +86,7 @@ jobs:
     - uses: actions/checkout@v4
     
     - name: Install Rust
-      uses: dtolnay/rust-toolchain@1.70.0  # Adjust MSRV as needed
+      uses: dtolnay/rust-toolchain@1.100.0  # Adjust MSRV as needed
     
     - name: Check MSRV
       run: cargo check --all-features
