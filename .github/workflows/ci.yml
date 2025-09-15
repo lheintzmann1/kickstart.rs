@@ -19,7 +19,7 @@ jobs:
     continue-on-error: ${{ matrix.rust == 'nightly' }}
     
     steps:
-    - uses: actions/checkout@v4
+    - uses: actions/checkout@v5
     
     - name: Install Rust
       uses: dtolnay/rust-toolchain@master
@@ -54,7 +54,7 @@ jobs:
     name: Security Audit
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v4
+    - uses: actions/checkout@v5
     - uses: rustsec/audit-check@v1.2.0
       with:
         token: ${{ secrets.GITHUB_TOKEN }}
@@ -63,7 +63,7 @@ jobs:
     name: Code Coverage
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v4
+    - uses: actions/checkout@v5
     
     - name: Install Rust
       uses: dtolnay/rust-toolchain@stable
@@ -83,7 +83,7 @@ jobs:
     name: Minimum Supported Rust Version
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v4
+    - uses: actions/checkout@v5
     
     - name: Install Rust
       uses: dtolnay/rust-toolchain@1.70.0  # Adjust MSRV as needed
